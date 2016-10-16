@@ -30,13 +30,13 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
                     intent= new Intent(TypeList.this, ShoppingItem.class);
                 }
                 else if(wishes.isChecked()){
-                    intent= new Intent(TypeList.this, ShoppingItem.class);
+                    intent= new Intent(TypeList.this, Wishes.class);
                 }
                 else if(places.isChecked()){
-                    intent= new Intent(TypeList.this, ShoppingItem.class);
+                    intent= new Intent(TypeList.this, Places.class);
                 }
                 else{
-                    intent= new Intent(TypeList.this, ShoppingItem.class);
+                    intent= new Intent(TypeList.this,ToDo.class);
                 }
 
                 startActivity(intent);
@@ -68,24 +68,24 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
         switch (checkRadioButtonid){
             case R.id.shopping:
                 if(shop.isChecked()){
-                  //  intent = new Intent(TypeList.this, ShoppingItem.class);
+
                 }
                 break;
             case R.id.wishes:
                 if(wishes.isChecked()){
-                    //intent = new Intent(TypeList.this, ShoppingItem.class);
+
                 }
                 break;
 
             case R.id.places:
                 if(places.isChecked()){
-                    //intent = new Intent(TypeList.this, ShoppingItem.class);
+
                 }
                 break;
 
             case R.id.toDo:
                 if(toDo.isChecked()){
-                    //intent = new Intent(TypeList.this, ShoppingItem.class);
+
                     Toast.makeText(getApplicationContext(),"Select type of new list",Toast.LENGTH_SHORT).show();
                 }
                 break;
