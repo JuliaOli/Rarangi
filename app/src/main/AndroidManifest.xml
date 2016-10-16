@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewItem" />
+        <activity android:name=".ShoppingItem" />
         <activity android:name=".TypeList"></activity>
     </application>
 
