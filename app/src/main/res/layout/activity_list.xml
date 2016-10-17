@@ -28,10 +28,15 @@
             android:layout_margin="@dimen/fab_margin"
             app:srcCompat="@drawable/ic_add_white_24dp" />
 
-        <ListView
+        <TextView
+            android:text="Sem Listas No Momento :("
             android:layout_width="wrap_content"
-            android:layout_marginTop="55dp"
-            android:layout_height="520dp" />
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

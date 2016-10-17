@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_places"
     android:layout_width="match_parent"
@@ -13,11 +14,18 @@
         android:id="@+id/linear3"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="330dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="90dp">
+
+        <TextView
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/title2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
         <TextView
             android:text="Place Name"
@@ -80,18 +88,27 @@
             android:text="Ex.: R$ 30,00"
             android:textAppearance="@style/TextAppearance.AppCompat" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:clickable="true"
+            android:fabSize="mini"
+            android:srcCompat="@drawable/ic_add_white_24dp"
+            android:id="@+id/fabAdd"
+            app:srcCompat="@drawable/ic_add_white_24dp" />
+
     </LinearLayout>
 
-    <Button
-        android:text="Add"
-        android:layout_width="64dp"
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/add3"
-        android:backgroundTint="@color/colorAccent"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="174dp" />
+        android:clickable="true"
+        android:fabSize="mini"
+        android:srcCompat="@android:drawable/ic_menu_save"
+        android:id="@+id/fabSave"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="430dp"
+        app:srcCompat="@android:drawable/ic_menu_save" />
 
 </RelativeLayout>
