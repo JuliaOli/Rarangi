@@ -57,7 +57,7 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
                     titleAux.setText(aux);
                 }
 
-
+                //startActivity(intent);
             }
         });
     }
