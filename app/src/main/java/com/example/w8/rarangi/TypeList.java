@@ -6,9 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import saveme.SaveMe;
 
 public class TypeList extends AppCompatActivity implements View.OnClickListener {
 
@@ -17,16 +21,26 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
     private RadioButton shop;
     private RadioButton places;
     private RadioButton toDo;
+    EditText title;
+    String aux;
+    SaveMe superString;
 
     public void init(){
+
         but = (Button)findViewById(R.id.button2);
         but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intent;
+
                 if(shop.isChecked()){
-                    intent= new Intent(TypeList.this, ShoppingItem.class);
+
+                    setContentView(R.layout.activity_shopping);
+                    intent= getIntent();
+                    aux = title.getText().toString();
+                    TextView titleAux = (TextView) findViewById(R.id.title1);
+                    titleAux.setText(aux);
                 }
                 else if(places.isChecked()){
                     intent= new Intent(TypeList.this, Places.class);
@@ -35,7 +49,6 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
                     intent= new Intent(TypeList.this,ToDo.class);
                 }
 
-                startActivity(intent);
 
             }
         });
@@ -51,6 +64,8 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
         places.setOnClickListener(this);
         toDo = (RadioButton)findViewById(R.id.toDo);
         toDo.setOnClickListener(this);
+        title = (EditText)findViewById(R.id.editText);
+
         init();
 
     }
@@ -75,7 +90,7 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
             case R.id.toDo:
                 if(toDo.isChecked()){
 
-                    Toast.makeText(getApplicationContext(),"Select type of new list",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),"Select type of new list",Toast.LENGTH_SHORT).show();
                 }
                 break;
         }

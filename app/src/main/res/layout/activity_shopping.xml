@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_new_item"
     android:layout_width="match_parent"
@@ -14,15 +15,22 @@
         android:id="@+id/linear"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="330dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
         <TextView
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/title1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
             android:text="Product Name"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:id="@+id/textView4" />
 
         <EditText
@@ -80,17 +88,25 @@
             android:text="Ex.: St. Apple Pie"
             android:textAppearance="@style/TextAppearance.AppCompat" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_add_white_24dp"
+            android:id="@+id/fabAdd" />
+
     </LinearLayout>
 
-    <Button
-        android:text="Add"
-        android:layout_width="64dp"
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/add"
-        android:backgroundTint="@color/colorAccent"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_below="@+id/linear"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        android:id="@+id/fabSave"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="430dp"/>
 
 </RelativeLayout>
