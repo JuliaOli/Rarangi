@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Activitie Name"
+    android:id="@+id/toDo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -20,7 +20,7 @@
         android:layout_marginBottom="90dp">
 
         <TextView
-            android:text="Product Name"
+            android:text="Activitie Name"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:id="@+id/textView4" />

@@ -20,7 +20,6 @@
         </activity>
         <activity android:name=".ShoppingItem" />
         <activity android:name=".TypeList" />
-        <activity android:name=".Wishes" />
         <activity android:name=".Places" />
         <activity android:name=".ToDo"></activity>
     </application>

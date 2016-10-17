@@ -15,7 +15,6 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
     private Button but;
     private RadioGroup radio;
     private RadioButton shop;
-    private RadioButton wishes;
     private RadioButton places;
     private RadioButton toDo;
 
@@ -28,9 +27,6 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
                 Intent intent;
                 if(shop.isChecked()){
                     intent= new Intent(TypeList.this, ShoppingItem.class);
-                }
-                else if(wishes.isChecked()){
-                    intent= new Intent(TypeList.this, Wishes.class);
                 }
                 else if(places.isChecked()){
                     intent= new Intent(TypeList.this, Places.class);
@@ -51,8 +47,6 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
         radio = (RadioGroup)findViewById(R.id.radio);
         shop = (RadioButton)findViewById(R.id.shopping);
         shop.setOnClickListener(this);
-        wishes = (RadioButton)findViewById(R.id.wishes);
-        wishes.setOnClickListener(this);
         places = (RadioButton)findViewById(R.id.places);
         places.setOnClickListener(this);
         toDo = (RadioButton)findViewById(R.id.toDo);
@@ -68,11 +62,6 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
         switch (checkRadioButtonid){
             case R.id.shopping:
                 if(shop.isChecked()){
-
-                }
-                break;
-            case R.id.wishes:
-                if(wishes.isChecked()){
 
                 }
                 break;

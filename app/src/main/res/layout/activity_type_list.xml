@@ -77,14 +77,6 @@
             android:layout_weight="1" />
 
         <RadioButton
-            android:text="Wishes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/wishes"
-            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
-            android:layout_weight="1" />
-
-        <RadioButton
             android:text="To do"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
