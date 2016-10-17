@@ -93,7 +93,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="280dp"
             android:clickable="true"
-            app:fabSize="mini"
             app:srcCompat="@drawable/ic_add_white_24dp"
             android:id="@+id/fabAdd" />
 
@@ -103,7 +102,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        app:fabSize="mini"
         app:srcCompat="@android:drawable/ic_menu_save"
         android:id="@+id/fabSave"
         android:layout_marginLeft="280dp"

@@ -43,10 +43,18 @@ public class TypeList extends AppCompatActivity implements View.OnClickListener 
                     titleAux.setText(aux);
                 }
                 else if(places.isChecked()){
-                    intent= new Intent(TypeList.this, Places.class);
+                    setContentView(R.layout.activity_places);
+                    intent= getIntent();
+                    aux = title.getText().toString();
+                    TextView titleAux = (TextView) findViewById(R.id.title2);
+                    titleAux.setText(aux);
                 }
                 else{
-                    intent= new Intent(TypeList.this,ToDo.class);
+                    setContentView(R.layout.activity_to_do);
+                    intent= getIntent();
+                    aux = title.getText().toString();
+                    TextView titleAux = (TextView) findViewById(R.id.title3);
+                    titleAux.setText(aux);
                 }
 
 

@@ -1,5 +1,4 @@
 package com.example.w8.rarangi;
-
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -18,8 +17,9 @@ import saveme.Save;
 public class ShoppingItem extends AppCompatActivity implements Save {
 
     FloatingActionButton fabAdd, fabSave;
-    String master;
-    TextView text1;
+    String master = null;
+    TextView title;
+    EditText text1;
     EditText text2;
     EditText text3;
     EditText text4;
@@ -34,11 +34,13 @@ public class ShoppingItem extends AppCompatActivity implements Save {
             @Override
             public void onClick(View view) {
 
+                System.out.println("entrou aqui");
+                title = (TextView)findViewById(R.id.title1);
                 text1 = (EditText)findViewById(R.id.textName);
                 text2 = (EditText)findViewById(R.id.editText6);
                 text3 = (EditText)findViewById(R.id.editText7);
                 text4 = (EditText)findViewById(R.id.editText5);
-                saveAll();
+                //saveAll();
                 Toast.makeText(getApplicationContext(),"Item added to the list",Toast.LENGTH_SHORT).show();
 
             }
@@ -59,7 +61,8 @@ public class ShoppingItem extends AppCompatActivity implements Save {
     @Override
     public void saveAll() {
 
-        master = text1.getText().toString().concat( ", " + text2.getText().toString() + ", ").concat(text3.getText().toString() + ",")
+        master = title.getText().toString();
+        master.concat("," + text1.getText().toString() + ",").concat( "," + text2.getText().toString() + ",").concat(text3.getText().toString() + ",")
                 .concat(text4.getText().toString() + "!!");
 
     }

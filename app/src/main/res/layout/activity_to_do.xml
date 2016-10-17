@@ -95,7 +95,7 @@
             app:fabSize="mini"
             app:srcCompat="@drawable/ic_add_white_24dp"
             android:layout_marginLeft="280dp"
-            android:id="@+id/floatingActionButton" />
+            android:id="@+id/fabAdd3" />
 
     </LinearLayout>
 
@@ -107,7 +107,7 @@
         app:srcCompat="@android:drawable/ic_menu_save"
         android:layout_marginLeft="280dp"
         android:layout_marginTop="430dp"
-        android:id="@+id/floatingActionButton2" />
+        android:id="@+id/fabSave3" />
 
 
 </RelativeLayout>
