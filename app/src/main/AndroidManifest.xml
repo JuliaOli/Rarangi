@@ -21,7 +21,7 @@
         <activity android:name=".ShoppingItem" />
         <activity android:name=".TypeList" />
         <activity android:name=".Places" />
-        <activity android:name=".ToDo"></activity>
+        <activity android:name=".ToDo" />
     </application>
 
 </manifest>

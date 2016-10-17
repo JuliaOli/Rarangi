@@ -4,7 +4,10 @@ package saveme;
  * Created by W8 on 17/10/2016.
  */
 
-public interface SaveMe {
+public class SaveMe {
 
-    public void salvar();
+    private Object object;
+
+    
+
 }
