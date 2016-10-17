@@ -19,7 +19,7 @@
         android:layout_marginBottom="90dp">
 
         <TextView
-            android:text="Product Name"
+            android:text="Name"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:id="@+id/textView4" />
@@ -28,32 +28,47 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:inputType="textPersonName"
-            android:text="Ex.: Tooth Brush"
+            android:text="Ex.: Buddhist Temple"
             android:ems="10"
             android:id="@+id/editText4"
             android:selectAllOnFocus="false"
             android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <TextView
-            android:text="Quantity of Purchases"
+            android:text="Country "
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView7" />
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberSigned"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText6"
-            android:text="Ex.: 43"
-            android:textAppearance="@style/TextAppearance.AppCompat" />
+            android:id="@+id/editText5"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:text="Ex.: China" />
 
         <TextView
-            android:text="Price"
+            android:text="City"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView8" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:text="Ex.: Hong Kong" />
+
+        <TextView
+            android:text="Does it have a entry price?"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/textView5" />
 
         <EditText
             android:layout_width="match_parent"
@@ -64,20 +79,6 @@
             android:text="Ex.: R$ 30,00"
             android:textAppearance="@style/TextAppearance.AppCompat" />
 
-        <TextView
-            android:text="Where"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:id="@+id/textView5" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText5"
-            android:text="Ex.: St. Apple Pie"
-            android:textAppearance="@style/TextAppearance.AppCompat" />
     </LinearLayout>
 
     <Button
